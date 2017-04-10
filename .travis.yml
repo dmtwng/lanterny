@@ -23,6 +23,9 @@ android:
     # if you need to run emulator(s) during your tests
     - sys-img-x86-android-23
 
+-before_install:
+  - chmod +x gradlew
+
 before_cache:
   - rm -f $HOME/.gradle/caches/modules-2/modules-2.lock
 
